@@ -18,7 +18,7 @@ public class duplicateInArray {
 			}
 		}
 
-//solution using hashset it is a java collection which stoes unique value
+//solution using hashset it is a java collection which stores unique value
 //  for(data_type item : collection)
 //O(N)
 		Set<String> store = new HashSet<String>();
