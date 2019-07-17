@@ -1,19 +1,27 @@
-
 public class Practise {
 
-	public static void main(String[] args) {
-		int n=5;
-		for(int i=0;i<n;i++) {
-			for(int k=(n-i);k>=0;k--) {
-				System.out.print(" ");
-			}
-			
-			for(int k=0;k<=i;k++) {
-				System.out.print("* ");
-			}
-			System.out.println();
-		}
-
+	 public static void main(String args[]){
+         
+	        int number = 2;
+	        int count = 0;
+	        long sum = 0;
+	        while(count < 100){
+	            if(isPrimeNumber(number)){
+	                sum += number;
+	                count++;
+	            }
+	            number++;
+	        }
+	        System.out.println(sum);
+	    }
+	     
+	    private static boolean isPrimeNumber(int number){
+	         
+	        for(int i=2; i<=number/2; i++){
+	            if(number % i == 0){
+	                return false;
+	            }
+	        }
+	        return true;
+	    }
 	}
-
-}
