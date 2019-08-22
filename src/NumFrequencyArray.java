@@ -20,8 +20,6 @@ public class NumFrequencyArray {
 	}
 
 	public static void main(String[] args) {
-
-
 		int n;
 		System.out.println("Enter the size of array");
 		Scanner sc = new Scanner(System.in);
